@@ -5,8 +5,12 @@
 }
 html { /* body won't work ¯\_(ツ)_/¯ */
   scroll-snap-type: y mandatory;
-}
 
+}
+a {
+ text-decoration: none;
+ color: #000000;
+}
 body {
   overflow-x: hidden;
   margin: 0;
@@ -15,6 +19,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  
 }
 
 code {

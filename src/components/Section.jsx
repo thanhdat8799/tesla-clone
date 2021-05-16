@@ -40,6 +40,7 @@ const Wrapper = styled.div`
 const ItemText = styled.div`
     color: #322626;
     text-transform: capitalize;
+    margin: 60px;
     span {
         font-size: 16px;
         font-weight: light;
@@ -65,10 +66,13 @@ const ButtonLeft = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 0.9;
-    margin: 20px;
+    margin: 15px;
     border-radius: 50px;
     text-transform: uppercase;
     cursor: pointer;
+    &:hover {
+        opacity: 0.75;
+    }
 `
 const ButtonRight = styled(ButtonLeft)`
     background: white;
@@ -81,11 +85,11 @@ const DownArrow = styled.img`
         0%, 50%, 100% {
             transform: translateY(0);
         }
-        35% {
+        30% {
             transform: translateY(5px);
         }
         60% {
-            transform: translateY(5px);
+            transform: translateY(3px);
         }
     }
 `
